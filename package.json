@@ -1,0 +1,22 @@
+{
+  "name": "memotest",
+  "version": "1.0.0",
+  "description": "memotest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisanmet/memotest.git"
+  },
+  "author": "Cristian Sancricca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crisanmet/memotest/issues"
+  },
+  "homepage": "https://github.com/crisanmet/memotest#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
