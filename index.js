@@ -3,7 +3,7 @@ const $template = document.querySelector(".template-jugadores").content;
 const fragment = document.createDocumentFragment();
 const $jugadores = document.querySelectorAll(".jugador");
 
-const jugadoresElegidos = [];
+const jugadoresClickeado = [];
 let ronda = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -34,4 +34,13 @@ const barajarJugadores = (jugador) => {
   return jugador.sort(() => (Math.random() > 0.5 ? 1 : -1));
 };
 
-console.log($jugadores);
+$contenedorJugadores.addEventListener("click", (e) => {
+  const $jugadorClickeado = e.path[0].dataset.nombre;
+  if ($jugadorClickeado) {
+    chequearJugadores($jugadorClickeado);
+  }
+});
+
+const chequearJugadores = (e) => {
+  jugadoresClickeado.push(e);
+};
