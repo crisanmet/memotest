@@ -1,0 +1,57 @@
+[
+  {
+    "img": "./assets/img/bataglia.jpg",
+    "nombre": "bataglia",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/giunta.jpg",
+    "nombre": "giunta",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/hrabina.jpg",
+    "nombre": "hrabina",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/ibarra.jpg",
+    "nombre": "ibarra",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/libertadores.jpg",
+    "nombre": "libertadores",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/maradona.jpg",
+    "nombre": "maradona",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/martinez.jpg",
+    "nombre": "martinez",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/palermo.jpg",
+    "nombre": "palermo",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/riquelme.jpg",
+    "nombre": "riquelme",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/schelotto.jpg",
+    "nombre": "schelotto",
+    "logo": "./assets/img/logo-boca.png"
+  },
+  {
+    "img": "./assets/img/schiavi.jpg",
+    "nombre": "schiavi",
+    "logo": "./assets/img/logo-boca.png"
+  }
+]
