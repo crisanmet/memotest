@@ -29,6 +29,7 @@ html {
   transition: all ease 0.5s;
   display: block;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 .dorso {
   width: 100%;
@@ -37,6 +38,7 @@ html {
   position: absolute;
   top: 0;
   transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .rotar-jugador {
