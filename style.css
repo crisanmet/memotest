@@ -21,7 +21,6 @@ html {
   position: relative;
   transition: all ease 0.5s;
   transform-style: preserve-3d;
-  transform: perspective(600px) rotateY(0deg);
 }
 
 .frente {
@@ -29,6 +28,7 @@ html {
   height: 100%;
   transition: all ease 0.5s;
   display: block;
+  backface-visibility: hidden;
 }
 .dorso {
   width: 100%;
@@ -36,9 +36,13 @@ html {
   transition: all ease 0.5s;
   position: absolute;
   top: 0;
-  transform: perspective(600px) rotateY(180deg);
+  transform: rotateY(180deg);
   backface-visibility: hidden;
 }
 .rotar-jugador {
-  transform: perspective(600px) rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.acierto {
+  background: url(./assets/img/la-raulito.jpg);
+  background-size: cover;
 }
