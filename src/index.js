@@ -54,6 +54,7 @@ const manejarClickUsuario = (jugador) => {
 
 const mostrarJugador = (jugador) => {
   jugador.classList.add("rotar-jugador");
+  jugador.classList.add("bloquear-pointer");
 };
 
 const evaluarCoincidencia = (jugadores) => {
@@ -69,7 +70,6 @@ const eliminarJugadores = (jugadores) => {
   jugadores.forEach((e) => {
     setTimeout(() => {
       e.parentElement.parentElement.classList.add("acierto");
-      //e.parentElement.parentElement.classList.remove();
     }, 500);
   });
   aciertos++;
@@ -81,6 +81,7 @@ const ocultarJugador = (jugadores) => {
   jugadores.forEach((e) =>
     setTimeout(() => {
       e.parentElement.parentElement.classList.remove("rotar-jugador");
+      e.parentElement.parentElement.classList.remove("bloquear-pointer");
     }, 500)
   );
   jugadoresClickeados = [];

@@ -46,3 +46,6 @@ html {
   background: url(./assets/img/la-raulito.jpg);
   background-size: cover;
 }
+.bloquear-pointer {
+  pointer-events: none;
+}
