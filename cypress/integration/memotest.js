@@ -35,24 +35,34 @@ context("Memotest", () => {
     let mapaJugadores;
     let listaJugadores;
     it("Elegimos una combinación errónea", () => {
+      cy.clock();
+
       cy.get(".frente img").then((jugador) => {
         mapaJugadores = obtenerParesDeJugadores(jugador);
         listaJugadores = Object.values(mapaJugadores);
-        console.log(listaJugadores);
+
+        cy.tick(1000);
 
         cy.get(listaJugadores[0][0]).click();
         cy.get(listaJugadores[1][0]).click();
+        cy.tick(1000);
 
         cy.get(".jugador").should("have.length", NUMERO_JUGADORES);
       });
     });
     it("Por último, resolvemos el juego", () => {
       cy.get(".jugador").should("have.length", NUMERO_JUGADORES);
-
       listaJugadores.forEach((jugador) => {
         cy.get(jugador[0]).click();
         cy.get(jugador[1]).click();
       });
+      const ronda = NUMERO_JUGADORES / 2;
+      cy.get(".mensaje-final")
+        .should("be.visible")
+        .contains(
+          `Felicitaciones! Sos mas bostero que la raulito. Lo completaste en ${ronda} Rondas`
+        );
+      cy.get(".rotar-jugador").should("have.length", NUMERO_JUGADORES);
     });
   });
 });
